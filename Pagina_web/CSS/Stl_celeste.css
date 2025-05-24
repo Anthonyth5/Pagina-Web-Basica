@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    width: 100%;
+    background-color: wheat;
+    box-sizing: border-box;
+    padding: 0;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+}
+/*---------------------------------------------------------*/
+/*header*/
+header{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+    padding: 0 30px;
+    animation-duration: 5s;
+    animation-name: Header_ani;
+}
+
+nav{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 30px 0 30px;
+}
+
+.nav_img{
+    object-fit: cover;
+    width: 60px;
+    margin: 10px;
+    justify-content: flex-start;
+    align-self: flex-start;
+}
+
+.nav_menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+    overflow: hidden;
+}
+
+.nav_menu a{
+    color: white;
+    font-size: 10px;
+    font-weight: 600;
+    background-color: brown;
+    padding: 25px 50px;
+
+}
+
+.nav_menu a:hover{
+    color: black;
+    background-color: chocolate;
+}
+
+/*Footer*/
+footer{
+    width: 90%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 60px;
+}
+.footer-img{
+    width: 35px;
+}
+.botom_footer{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 40px;
+}
+
+/*banner_celeste----------------------------------------------------------------------------*/
+.banner{
+    width: 100%;
+    height: 100%;
+    min-width: 600px;
+    min-height: 800px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.banner::before{
+    content: "";
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url(Celeste/fondo1.webp);
+    background-size: cover;
+    z-index: -1;
+}
+.Logotipo{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Logotipo img{
+    width: 60%;
+    height: 60%;
+    display: block;
+}
+.Titulo{
+    color: white;
+    font-weight: 30px;
+}
+
+/*seccion 2-----------------------------------------------------------------------------------------*/
+
+.Introduccion{
+    background-color: rgb(80, 141, 255);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    align-items: center;
+}
+.tex_int{
+    width: 90%;
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 1em;
+    align-items: center;
+    margin: 65px;
+}
+.Texto_intro{
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+.Imagen_Intro{
+    max-width: 800px;
+}
+.img_intro{
+    width: 100%;
+    display: block;
+}
+
+/*Datos Celeste -------------------------------------------------------------------------------------*/
+.datos_celes_Ge{
+    width: 100%;
+    background-color: rgb(186, 250, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.boton_text{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 50px;
+    align-items: center;
+    padding: 20px;
+    padding-left: 80px;
+}
+.boton_text img{
+    width: 80px;
+    display: block;
+}
+.boton_text img:hover{
+    background-color: rgb(234, 7, 255);
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.datos_celes{
+    width: 90%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    margin: 50px;
+    padding: 20;
+    line-height: 1.7;
+}
+.datos_celes img{
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.titulo_datos{
+    padding: 30px;
+}
+.texto_datos text{
+    text-justify: distribute-all-lines;
+    padding: 30px;
+}
+
+/*Conclusion------------------------------------------------------------------------------------*/
+.conclucion{
+    background-color: white;
+    width: 92.4%;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    justify-content: center;
+    text-align: left;
+    text-decoration: none;
+    gap: 3em;
+    padding: 60px;
+}
+.conclucion img{
+    width: 300px;
+    height: 300px;
+    display: block;
+}
+.conclucion_text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    line-height: 1.7;
+}
+.conclucion_text h4{
+    line-height: 50px;
+    font-weight: 50px;
+    font-size: 30px;
+}
+
+/*Nieve-------------------------------------------------------------------------------------*/
+#contenedor_nieve{  
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    transition: opacity 500ms;
+    width: 100%;
+    pointer-events: none;
+    z-index: 2;
+}
+.snow {
+    animation: fall ease-in infinite, sway ease-in-out infinite;
+    color: skyblue;
+    position: absolute;
+}
+
+@keyframes fall {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    top: 100vh;
+    opacity: 1;
+  }
+}
+
+@keyframes sway {
+  0% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: 50px;
+  }
+  50% {
+    margin-left: -50px;
+  }
+  75% {
+    margin-left: 50px;
+  }
+  100% {
+    margin-left: 0;
+  }
+}

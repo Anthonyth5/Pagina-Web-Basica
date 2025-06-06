@@ -1,5 +1,3 @@
-import "./";
-import imagen from "./../../IMAGENES/img/";
 import { Texto_aleatorio, articulo_1, Cambio  } from "./Eventos_principal";
 
 

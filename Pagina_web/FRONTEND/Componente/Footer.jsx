@@ -1,5 +1,5 @@
 import "./../CSS/Componentes.css";
-import imagen from "./../../IMAGENES/img/pinterest_icon.png";
+import imagen from "./../IMAGENES/img/pinterest_icon.png";
 
 const Footer = () => {
     return (

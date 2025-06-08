@@ -15,7 +15,7 @@ const func_Comentario = () => {
   const [comentarios, setComentarios] = useState([])
   const [dataForm, setDataForm] = useState({})
   const getComentarios = async () => {
-    const allComentarios = await fetch("http://localhost:8000/api/v1/comentarios")
+    const allComentarios = await fetch("https://pagina-web-basica.onrender.com/api/v2/comentarios")
     const ComentarioJson = await allComentarios.json()
     //console.log(ComentariosJson)
     setComentarios(ComentarioJson)
@@ -33,7 +33,7 @@ const func_Comentario = () => {
   const handlerFormSubmit = async (e) =>{
     e.preventDefault();
 
-    await fetch("http://localhost:8000/api/v1/comentarios"),{
+    await fetch("https://pagina-web-basica.onrender.com/api/v2/comentarios"),{
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -45,7 +45,7 @@ const func_Comentario = () => {
   }
 
   const handlerDeleteBotton = async (id) =>{
-      await fetch("http://localhost:8000/api/v1/comentarios/${id}"),{
+      await fetch("https://pagina-web-basica.onrender.com/api/v2/comentarios/${id}"),{
       method: "DELETE"
     }
     getComentarios()

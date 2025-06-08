@@ -1,0 +1,57 @@
+export const Celeste = () => {
+    return (
+        <main>
+            <section class="banner">
+                <a href="articulo_celeste.html" class="Logotipo">
+                    <img src="Celeste/Logo_big.png" alt=""/>
+                </a>
+                <div class="Titulo">
+                    <h1>Uno de los videojuegos mas impactante por su dificultad</h1>
+                </div>
+            </section>
+
+            <section class="Intro">
+                <div class="Introduccion">
+                    <div class="tex_int">
+                        <h2 class="Titulo_intro">Celeste: Más que un Juego de Plataformas, una Lección de Vida</h2>
+                        <p class="Texto_intro">En el mundo de los videojuegos, cada cierto tiempo aparece una obra que trasciende el entretenimiento y logra tocar fibras emocionales profundas. Celeste, desarrollado por Matt Makes Games y lanzado en 2018, es uno de esos raros títulos que combinan magistralmente el desafío jugable con una narrativa íntima y poderosa. Lo que a primera vista parece ser un simple juego de plataformas en 2D, se convierte en una exploración sincera de la salud mental, el crecimiento personal y la autoaceptación.</p>
+                    </div>
+                <figure class="Imagen_Intro">
+                        <img src="Celeste/Fondo3.webp" class="img_intro"/>
+                    </figure>
+                </div>
+            </section>
+
+            <section id="Datos" class="datos_celes_Ge">
+                <div class="boton_text">
+                    <img src="Celeste/logo1.webp" id="dat1"/>
+                    <img src="Celeste/logo4.webp" id="dat2"/>
+                    <img src="Celeste/logo2.webp" id="dat3"/>
+                </div>
+                <article id="Data_art" class="datos_celes">
+                    <div>
+                        <h3 class="titulo_datos">Una Montaña, Muchos Obstáculos</h3>
+                        <p class="texto_datos">
+                            La premisa de Celeste es aparentemente sencilla: Madeline, una joven decidida a escalar la imponente montaña Celeste, debe superar numerosos desafíos para llegar a la cima. Sin embargo, pronto queda claro que esta escalada va mucho más allá de lo físico: se trata también de una travesía emocional. Madeline lucha consigo misma, literalmente, al enfrentarse a su “lado oscuro”, una manifestación de sus miedos, ansiedad y dudas.
+                            Cada nivel de la montaña representa un nuevo obstáculo tanto externo como interno. Las mecánicas se intensifican a medida que la historia progresa, reflejando el aumento en la dificultad emocional de su viaje. El juego logra un equilibrio perfecto entre historia y jugabilidad, donde ambos elementos se retroalimentan.
+                        </p>
+                        </div>
+                    <img src="Celeste/celeste_1.jpg" class="img_datos"/>
+                </article>
+            </section>
+
+            <section class="conclucion">
+                <img src="Celeste/abrazo.webp"/> 
+                <div class="conclucion_text">
+                    <h4 class="conclucion_titulo"><span>Un Mensaje Necesario</span></h4>
+                    <p>
+                        Más allá del desafío técnico, Celeste ofrece un mensaje esperanzador sobre la lucha interna que muchas personas enfrentan diariamente. La historia de Madeline se vuelve universal al representar el proceso de aceptar nuestras propias debilidades y encontrar fuerza en la vulnerabilidad.
+                        En una industria que a menudo prioriza la acción superficial o los gráficos de última generación, Celeste destaca por su <span>valentía emocional</span> y su capacidad de empatizar con el jugador. Es un juego que no teme hablar de ansiedad, depresión y autoexigencia, y lo hace con una sinceridad que ha resonado profundamente en su comunidad.
+                        <span>Celeste</span> es mucho más que un excelente juego de plataformas. Es una experiencia que invita a la reflexión, que desafía tanto al jugador como a la persona detrás del mando. A través de su historia, mecánicas y presentación artística, demuestra que los videojuegos pueden ser una poderosa herramienta de expresión personal y sanación emocional.
+                    </p>
+                </div>
+            </section>
+        </main>
+);}
+
+export default Celeste

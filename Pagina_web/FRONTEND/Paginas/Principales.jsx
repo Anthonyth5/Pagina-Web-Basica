@@ -1,9 +1,13 @@
 import { Texto_aleatorio, articulo_1, Cambio  } from "./Eventos_principal";
+import { Articulos_card } from "./Card_articulos";
 import imagen_fondo from "./../IMAGENES/imgP//fondo6.jpg";
-const images = import.meta.glob('./../IMAGENES/imgP/*.png', { eager: true });
-const imageList = Object.values(images).map((mod) => mod.default);
+const images_png = import.meta.glob('./../IMAGENES/imgP/*.png', { eager: true });
+const images_jpg = import.meta.glob('./../IMAGENES/imgP/*.jpg', { eager: true });
+const imageList_j = Object.values(images_jpg).map((mod) => mod.default);
+const imageList_p = Object.values(images_png).map((mod) => mod.default);
 
-const Principal = () => {
+
+export const Principal = () => {
     return (
         <main className="main">
             <section className="Banner">
@@ -50,28 +54,26 @@ const Principal = () => {
 
                 <article className="ban_articulo article_segundario">
                     <h5>Evolucion del desarrollo</h5>
-                    <button id="boton_articulo" onClick={ Cambio }><p>Leer más</p></button> 
+                    <button id="boton_articulo"  href= "/articulo_celeste.html"><p>Leer más</p></button> 
                 </article>
             </section>
         </main>
     );
 }
 
-const Contactanos = () => {
+export const Contactanos = () => {
     return (<></>);}
 
-const Nosotros = () => {
+export const Nosotros = () => {
     return (<></>);}
 
-const Articulos = () => {
+export const Articulos = () => {
     return (
         <main>
-            <section class="card_seccion">
-
-
+            <section className="card_seccion">
+                <a href= "/articulo_celeste.html">
+                    <Articulos_card imageListP={imageList_p} p={1} imageListJ={imageList_j} j={1} titulo="Desarrollo" titulo2="Metodologia de desarrollo" descripcion="Hola mundo" nombre="Anthonyth" fecha="2/02/2025" /> 
+                </a>
             </section>
-        </main>
+        </main>   
 );}
-
-
-export default Principal; Contactanos; Nosotros; Articulos

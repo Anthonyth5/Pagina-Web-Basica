@@ -140,6 +140,11 @@ h5{
 
 /*---------------------Nosotros.html---------------------------*/
 .Nosotros{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: center;
     padding: 60px;
 }
 .Nosotros p{
@@ -152,7 +157,7 @@ h5{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: start;
     justify-content: center;
 }
 .card{

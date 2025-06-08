@@ -1,36 +1,29 @@
-export const Articulos = ({ imageListP, imageListJ, titulo, titulo2, descripcion, nombre, fecha }) => {
+export const Articulos_card = ({ imageListP, p, imageListJ, j, titulo, titulo2, descripcion, nombre, fecha }) => {
     return (
-        <main>
-            <section class="card_seccion">
 
-                <article class="card">
-                    <div class="head_card">
-                        {imageListJ.map((src, i) => (
-                            <img key={i} src={src} alt={`Imagen ${i}`} />
-                        ))}
-                    </div>
+        <article className="card">
+            <div className="head_card">
+                <img src={imageListJ[j]} alt={`Imagenportada`} />
+            </div>
                     
-                    <div class="foot_card">
-                        <div class="titulo_card">
-                            <span>{ titulo }</span>
-                        </div>
-                        <div class="texto_card">
-                            <h3> { titulo2 }</h3>
-                            <p>{ descripcion }</p>
-                        </div>
-                        <div class="perfil_card">
-                            <div class="img_perfil">
-                                {imageListJ.map((src, i) => (
-                                    <img key={i} src={src} alt={`Imagen ${i}`} />
-                                ))}
-                            </div>
-                            <div class="texto_perfil">
-                                <span>{ nombre }</span>
-                                <span>{ fecha }</span>
-                            </div>
-                        </div>
+            <div className="foot_card">
+                <div className="titulo_card">
+                    <span>{ titulo }</span>
+                </div>
+                <div className="texto_card">
+                    <h3> { titulo2 }</h3>
+                    <p>{ descripcion }</p>
+                </div>
+                <div className="perfil_card">
+                   <div className="img_perfil">
+                        <img src={imageListP[p]} alt={`Imagenportada`} />
                     </div>
-                </article>
-            </section>
-        </main>
+                    <div className="texto_perfil">
+                        <span>{ nombre }</span>
+                        <span>{ fecha }</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+
 );}

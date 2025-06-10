@@ -1,6 +1,6 @@
-import { Texto_aleatorio, articulo_1, Cambio  } from "./Eventos_principal";
+import { Texto_aleatorio, Cambio_Articulo } from "./Eventos_principal";
 import { Articulos_card } from "./Card_articulos";
-import imagen_fondo from "./../IMAGENES/imgP//fondo6.jpg";
+import imagen_fondo from "./../IMAGENES/imgP/fondo6.jpg";
 const images_png = import.meta.glob('./../IMAGENES/imgP/*.png', { eager: true });
 const images_jpg = import.meta.glob('./../IMAGENES/imgP/*.jpg', { eager: true });
 const imageList_j = Object.values(images_jpg).map((mod) => mod.default);
@@ -13,11 +13,11 @@ export const Principal = () => {
             <section className="Banner">
                 <h1>Videojuegos</h1>
                 <h2 id="ban_titulo2">
-                    <span>{ Texto_aleatorio }</span>
+                    <span>{Texto_aleatorio()}</span>
                 </h2>
             </section>
 
-            <sectio className="diapositiva">
+            <section className="diapositiva">
                 <div className="titulo_div">
                     <h2>Como se Crea un videojuego</h2>
                 </div>
@@ -39,7 +39,7 @@ export const Principal = () => {
                         <p>Los usuarios que estaran jugando para darle vida</p>
                     </div>
                 </div>
-            </sectio>
+            </section>
 
             <section className="articulos">
                 <div className="barra_articulos">
@@ -49,12 +49,12 @@ export const Principal = () => {
 
                 <article className="ban_articulo articulo_pricipal">
                     <h5>Celeste un juego impresionante</h5>
-                    <button id="Celeste" onClick={ articulo_1 }><p>Leer más</p></button>
+                    {Cambio_Articulo("/Articulos")}
                 </article>
 
                 <article className="ban_articulo article_segundario">
                     <h5>Evolucion del desarrollo</h5>
-                    <button id="boton_articulo"  href= "/articulo_celeste.html"><p>Leer más</p></button> 
+                    {Cambio_Articulo("/Articulos")}
                 </article>
             </section>
         </main>
@@ -71,9 +71,7 @@ export const Articulos = () => {
     return (
         <main>
             <section className="card_seccion">
-                <a href= "/articulo_celeste.html">
-                    <Articulos_card imageListP={imageList_p} p={1} imageListJ={imageList_j} j={1} titulo="Desarrollo" titulo2="Metodologia de desarrollo" descripcion="Hola mundo" nombre="Anthonyth" fecha="2/02/2025" /> 
-                </a>
+                <Articulos_card links="/articulo_celeste.html" imageListP={imageList_p} p={1} imageListJ={imageList_j} j={1} titulo="Desarrollo" titulo2="Metodologia de desarrollo" descripcion="Hola mundo" nombre="Anthonyth" fecha="2/02/2025" /> 
             </section>
         </main>   
 );}
